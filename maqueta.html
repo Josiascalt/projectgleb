@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>portf</title>
+	<style type="text/css">
+		body,section,div, h1, p, button, iframe, h3, hr, form, input, h4 {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-family: sans-serif;
+		}
+		body {
+			background-color: rgb(245, 245, 245);
+		}
+		.header {
+			padding-top: 4vh;
+			height: 85vh;
+			background-color: rgb(255, 230, 230);
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+				.menu {
+					width: 80%;
+					height: 12%;
+					background-color: darkslategray;
+					margin: auto;
+					display: flex;
+					padding-right: 25%;
+					padding-left: 25%;
+					box-sizing: border-box;
+
+				}
+				.menuOptions, .galeryOption {
+					background-color: darkslategray;
+					padding-top: 2.5%;
+					width: 29%;
+					height: 100%;
+					margin: auto;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: white;
+					text-transform: uppercase;
+					font-size: smaller;
+					box-sizing: border-box;
+				}
+
+				#home {
+					background-color: red;
+					width: 22%;
+				}
+				
+		.lsh, .rsh {
+			height: 74vh;
+			width: 50%;
+			padding-top: 12vh;
+			box-sizing: border-box;
+		}
+		.lsh {
+			padding-left: 10%;
+			}
+				.bigPhrase, .bigPhrase2 {
+					text-transform: uppercase;
+					font-weight: 400;
+					font-size: 3.3em;
+					letter-spacing: .05em;
+					font-family: arial black;
+				}
+
+				.textContainer {
+					margin-top: 3vh;
+					width: 82.5%; 
+					text-align: justify;
+					line-height: 1.5em;
+					opacity: .5;
+				}
+					
+				.button {
+					background-color: red;
+					color: white;
+					border-radius: .4em;
+					border: none;
+					height: 7.5vh;
+					width: 15vw;
+					margin-top: 7vh;
+					text-transform: capitalize;
+					font-size: 120%;
+					font-weight: 600;
+			}
+
+		.rsh {
+		padding-right: 10%;
+		padding-left: 6%;
+		}
+
+				#video1 {
+					width: 100%;
+					height: 44vh;
+					box-shadow: 5px 5px 30px 5px black;
+				}
+
+		.presentation {
+			height: 74vh;
+			background-color: rgb(245, 245, 245);
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		#lsp, #rsp {
+			height: 74vh;
+		}
+
+				#titlesPres {
+					width: 34vw;
+				}
+
+				.bigPhrase2 {
+					font-family: arial;
+					font-weight: 800;
+					font-size: 2.3em;
+					opacity: .6;
+					line-height: 140%;
+					letter-spacing: 0.04em;
+				}
+
+				.presentation .textContainer {
+					margin-top: 4vh;
+				}
+
+				.presentation .button {
+					color: red;
+					background-color: transparent;
+					border: red solid 1px;
+					margin-top: 6vh;
+				}
+
+
+		#rsp {
+			box-sizing: border-box;
+			padding-left: 0;
+			padding-right: 10%;
+			display: flex;
+			flex-wrap: wrap;
+			height: 66vh;
+
+		}
+
+				.minicards {
+					background-color: transparent;
+					width: 50%;
+					height: 27vh ;
+					box-sizing: border-box;
+					background-repeat: no-repeat;
+					background-size: 13%;
+					padding-right: 5%;
+					padding-top: 10%;
+				}
+
+				#card1 {
+					background-image: url(https://e7.pngegg.com/pngimages/548/792/png-clipart-gear-symbol-computer-icons-encapsulated-postscript-logo-setting-miscellaneous-logo.png); 
+				}
+				#card2 {
+					background-image: url(https://img2.gratispng.com/20180907/xfi/kisspng-drawing-vector-graphics-illustration-computer-icon-pencil-edit-draw-svg-png-icon-free-download-5-97-5b92b0f5c780d9.1960060615363402138172.jpg);
+					padding-right: 0%;
+				}
+				#card3 {
+					background-image: url(https://www.pngitem.com/pimgs/m/512-5125551_png-file-svg-diamond-logo-clipart-transparent-png.png);
+				}
+				#card4 {
+					background-image: url(https://cdn-icons-png.flaticon.com/512/82/82396.png);
+					padding-right: 0%;
+				}
+
+						.titlemc {
+							font-family: Gill Sans Extrabold, sans-serif;
+							font-size: 1.35em;
+							font-weight: 500;
+							letter-spacing: 0.015em;
+							opacity: .6;
+						}
+
+						.textmc {
+							margin-top: 1vw;
+							line-height: 1.5em;
+							opacity: .3;
+						}
+		
+		
+		.galery {
+			height: 158.5vh;
+			background-color: rgb(245, 245, 245);
+			box-sizing: border-box;
+			padding-right: 10%;
+			padding-left: 10%;
+		}
+				#line {
+					background-color: black;
+					height: 2px;
+					opacity: .1;
+				}
+
+				.sectioncomm {
+					margin-top: 12vh;
+				}
+
+						#positionc, #textpc {
+							text-align: center;
+							margin-right: auto;
+							margin-left: auto ;
+						}
+
+						#textpc, #textpl {
+							margin-top: 1.5%;
+							margin-bottom: 2%;
+							width: 45%;
+						}
+
+						.redline {
+							background-color: red;
+							height: 2px;
+							width: 10%;
+							margin: auto;
+						}
+
+				.galeryOptions {
+					margin-top: 10vh;
+					margin-left: 10vw;
+					margin-right: 10vw;
+					display: flex;
+					box-sizing: border-box;
+				}
+
+						.galeryOption {
+							background-color:transparent;
+							padding-top: 0;
+							width: auto;
+							height: auto;
+							margin: auto;
+							color: black;
+							font-family: Gill Sans Extrabold, sans-serif;
+							font-size: 1.25em;
+							font-weight: normal;
+							opacity: .6;
+						}
+
+						#all{
+							color: red;
+							opacity: 1;
+						}
+
+				.containerGalery {
+					box-sizing: border-box;
+					display: flex;
+					flex-wrap: wrap;
+					height: 39.25vw;
+					margin-top: 5%;
+				}
+
+						.galeryContent {
+							width: 18.875vw;
+							height: 18.875vw;
+							box-sizing: border-box;
+							margin: auto;
+							background-color: rgb(255, 230, 230);
+						}
+
+						#gc1, #gc2, #gc3, #gc4 {
+							margin-top: 0;
+						}
+
+						#gc5, #gc6, #gc7, #gc8 {
+							margin-bottom: 0;
+						}
+
+						#gc1, #gc5 {
+							margin-left: 0;
+						}
+
+						#gc4, #gc8 {
+							margin-right: 0;
+						}
+				#textpl {
+					width: 40%;
+				}
+
+				#rlpl {
+					margin-left: 0;
+				}
+
+		.contactSection {
+			height: 53vh;
+			box-sizing: border-box;
+			background-color: rgb(245, 245, 245);
+			padding-right: 10%;
+			padding-left: 10%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+				.leftCS {
+					height: 100%;
+					width: 25.47%;
+					box-sizing: border-box;
+					margin-right: 6%;
+					
+				}
+
+						.mainContact {
+							height: 100%;
+							width: 100%;
+							background-color: rgb(255, 230, 230);
+						}
+
+				.rigthCS {
+					width: 68.53%;
+					height: 100%;
+					box-sizing: border-box;
+				}
+						.upsideRCS, .bottomsideRCS {
+							height: 50%;
+							box-sizing: border-box;
+						}
+
+						#markw {
+							font-size: 1.7em;
+							font-weight: normal;
+							opacity: .7;
+						}
+
+						#markwt {
+							width: 75%;
+							margin-top: 2.9%;
+						}
+
+						.contactOptions {
+							width: 45%;
+							box-sizing: border-box;
+							display: flex;
+							margin-top: 4%;
+							
+						}
+
+								.contactOption {
+									width: 25%;
+									box-sizing: border-box;
+									font-style: italic;
+									font-size: 1em;
+									font-weight: normal;
+									margin: auto;
+									text-align: center;
+									opacity: .5;
+								}
+
+								#facebook {
+									text-align: justify;
+								}
+
+						.containerContacts {
+							width: 100%;
+							box-sizing: border-box;
+							display: flex;
+							flex-wrap: wrap;
+							height: 100%;
+						}		
+
+								.contactBox {
+									width: 23.5%;
+									height: 100%;
+									box-sizing: border-box;
+									background-color: rgb(255, 230, 230);
+									margin: auto;
+								}			
+
+								#box1 {
+									margin-left: 0;
+
+								}
+
+								#box4 {
+									margin-right: 0;
+								}	
+
+								#sorinajue {
+									height: 15%;
+									box-sizing: border-box;
+									margin-top: 100%;
+									background-color: gray;
+									text-transform: uppercase;
+									color: whitesmoke;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+								}
+
+		.suscription {
+			height: 60.125vh;
+			box-sizing: border-box;
+			background-color: rgb(245, 245, 245);
+
+		}
+
+				.suscriptionBox {
+					margin-top: 8.1%;
+					background-color: rgb(255, 230, 230);
+					box-sizing: border-box;
+					height: 91.9%;
+				}
+
+						.upboxSus, .bottomboxSus {
+							height: 50%;
+							display: flex;
+							flex-wrap: wrap;
+							box-sizing: border-box;
+						}
+
+								#susBoxH {
+									font-size: 1.3;
+									text-transform: inherit;
+									margin: auto;
+									margin-top: 9%;
+									color: rgb(245, 245, 245);
+									opacity: 1;
+
+								}
+
+								#susBoxT {
+									margin: auto;
+									margin-top: 1.5%;
+									color: rgb(245, 245, 245);
+									opacity: .7;
+								} 
+
+								.formsus {
+									width: 100%;
+									box-sizing: border-box;
+									display: flex;
+									flex-wrap: wrap;
+								}
+
+										.emailbox, .sendButton{
+											height: 30%;
+											font-size: 1em;
+											width: 33%;
+											margin: auto;
+											border-radius: .4em;
+											margin-top: 3.5%;
+										}
+
+										#email {
+											padding-left: 2%;
+											margin-right: 1%;
+										}
+
+										.sendButton {
+											background-color: red;
+											width: 15vw;
+											color: white;
+											font-weight: 600;
+											margin-left: 0;
+										}
+
+		
+		#gitbox, #gitphrase, #gittext {
+			box-sizing: border-box;
+			margin: 0;
+		}				 
+
+		#gitbox {
+			margin-top: 5%;
+			width: 50%;
+			margin-left: 10%;
+		}
+
+				#gitphrase {
+					margin-bottom: 5%;
+				}
+
+				#gittext {
+					margin-bottom: 6%;
+				}
+
+				#redlineleft {
+					margin: 0;
+					width: 18%;
+				}
+
+		.feedingBackBox {
+			height: 55.25vh;
+			box-sizing: border-box;
+			margin-top: 5%;
+			margin-bottom: 7%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+				.fBLS, .fBRS{
+					height: 100%;
+					box-sizing: border-box;
+					display: flex;
+					flex-wrap: wrap;
+				}
+
+				.fBLS {
+					width: 60%;
+					padding-left: 10%;
+				}
+
+						.formFB {
+							 height: 100%;
+							 width: 100%;
+							 display: flex;
+							 flex-wrap: wrap;
+						}
+
+						.itemformFB {
+							width: 100%;
+							height: 13.55%;
+							box-sizing: border-box;
+							background-color: lightgray;
+							font-size: 1em;
+							border-radius: .7em;
+							margin: auto;
+						}
+
+						.itemformFB::placeholder {
+							color: gray;
+							position: relative;
+							
+						}
+
+						#inputMsg::placeholder {
+							color: gray;
+							position: relative;
+							bottom: 35%;
+							
+						}
+
+								#sendmessage {
+									height: 13.55%;
+									width: 100%;
+									margin: auto;
+									margin-bottom: 0;
+								}
+
+								#inputEmail, #inputName {
+									width: 47%;
+									margin-top: 0;
+									padding-left: 6%;
+								}
+
+								#inputEmail {
+									margin-right: 0;
+									
+								}
+
+								#inputName {
+									margin-left: 0;
+								}
+
+								#inputMsg {
+									padding-left: 6%;
+									height: 55%;
+								}
+
+						.fBRS {
+							width: 34%;
+							height: 100%;
+							padding-right: 10%;
+							padding-left: 4%;
+							background-color: black;
+							opacity: .8;
+							margin-left: 6%;
+
+						}
+
+						.contactInfo, .dataContact {
+							color: white;
+							box-sizing: border-box;
+							width: 100%;
+							margin: auto;
+							opacity: .8;
+						}
+
+						.contactInfo {
+							font-size: 1.1em;
+							text-transform: uppercase;
+							margin-top: 45%;
+						}
+
+						.dataContact {
+							font-size: 1em;
+						}
+
+						#numberphone {
+							margin-bottom: 45%;
+						}
+
+		.end {
+			background-color: black;
+			height: 14vh;
+			opacity: .8;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+
+				.rigths, .socialNW {
+					box-sizing: border-box;
+					color: white;
+					width: 35%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					opacity: .5;
+					margin: auto;
+				}
+				.rigths {
+					margin-left: 0;
+				}
+				.socialNW {
+					width: 20%;
+					margin-right: 0;
+					flex-wrap: wrap;
+				}
+
+						.logoSNW {
+							width: 20%;
+							margin: auto;
+							background-color: transparent;
+						}
+
+	</style>				
+</head>
+<body>
+	<header class="header">
+		<section class="menu">
+			<div id="home" class="menuOptions">home</div>
+			<div class="menuOptions">portfolio</div>
+			<div class="menuOptions">about us</div>
+			<div class="menuOptions">contact</div>
+		</section>
+		<section class="lsh">
+		<div class="titles">
+		<h1 class="bigPhrase">our strong</h1>
+		<h1 class="bigPhrase">organaisation</h1>
+		</div>
+		<div class="textContainer">
+			<p class="parrafo">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had.</p>
+		</div>
+		<button class="button">contact us</button>
+		</section>
+		<section class="rsh">
+			<iframe id="video1" src="https://www.youtube.com/embed/B1T_US4ysDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+	</header>
+	<div class="presentation">
+		<section id="lsp" class="lsh">
+			<div id="titlesPres" class="titles">
+			<h1 class="bigPhrase2">do you know we can</h1>
+			<h1 class="bigPhrase2">provide for you?</h1>
+			</div>
+			<div class="textContainer">
+				<p class="parrafo">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had.</p>
+			</div>
+			<button class="button">Learn More</button>
+		</section>
+		<section id="rsp" class="rsh">
+			<div id="card1" class="minicards">
+				<h3 class="titlemc">Management</h3>
+				<p class="textmc">Alice was beginning to get very tired of sitting by her sister on the
+  				bank, and of having nothing to do: once or twice she had peeped.</p>
+			</div>
+			<div id="card2" class="minicards">
+				<h3 class="titlemc">UI /UX Disign</h3>
+				<p class="textmc">Alice was beginning to get very tired of sitting by her sister on the
+  				bank, and of having nothing to do: once or twice she had peeped.</p>
+			</div>
+			<div id="card3" class="minicards">
+				<h3 class="titlemc">Logo /Brending</h3>
+				<p class="textmc">Alice was beginning to get very tired of sitting by her sister on the
+  				bank, and of having nothing to do: once or twice she had peeped.</p>
+			</div>
+			<div id="card4" class="minicards">
+				<h3 class="titlemc">Animation</h3>
+				<p class="textmc">Alice was beginning to get very tired of sitting by her sister on the
+  				bank, and of having nothing to do: once or twice she had peeped.</p>
+			</div>
+		</section>
+	</div>
+	<div class="galery">
+		<hr id="line">
+		<section class="sectioncomm">
+			<h1 class="bigPhrase2" id="positionc">Feature products</h1>
+			<p class="textmc" id="textpc">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped.</p>
+			<hr class="redline">
+		</section>
+		<section class="galeryOptions">
+			<div class="galeryOption" id="all">All</div>
+			<div class="galeryOption">Print template</div>
+			<div class="galeryOption">web template</div>
+			<div class="galeryOption">user interface</div>
+			<div class="galeryOption">mock-up</div> 
+		</section>
+		<section class="containerGalery">
+			<div class="galeryContent" id="gc1"></div>
+			<div class="galeryContent" id="gc2"></div>
+			<div class="galeryContent" id="gc3"></div>
+			<div class="galeryContent" id="gc4"></div>
+			<div class="galeryContent" id="gc5"></div>
+			<div class="galeryContent" id="gc6"></div>
+			<div class="galeryContent" id="gc7"></div>
+			<div class="galeryContent" id="gc8"></div>
+		</section>
+		<section class="sectioncomm">
+			<h1 class="bigPhrase2" id="positionl">meet our team</h1>
+			<p class="textmc" id="textpl">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book.</p>
+			<hr class="redline" id="rlpl">
+		</section>
+	</div>
+	<div class="contactSection">
+		<section class="leftCS">
+			<div class="mainContact"></div>
+		</section>
+		<section class="rigthCS">
+			<div class="upsideRCS">
+				<h3 class="bigPhrase2" id="markw">Mark waugh</h3>
+				<p class="textmc" id="markwt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she.</p>
+				<div class="contactOptions">
+					<div class="contactOption" id="facebook">Facebook</div>
+					<div class="contactOption">Dribble</div>
+					<div class="contactOption">Behance</div>
+					<div class="contactOption">Twiter</div>
+				</div>
+			</div>
+			<div class="bottomsideRCS">
+				<div class="containerContacts">
+					<div class="contactBox" id="box1">
+						<div id="sorinajue">sorina jue</div>
+					</div>
+					<div class="contactBox"></div>
+					<div class="contactBox"></div>
+					<div class="contactBox" id="box4"></div>
+			</div>
+		</section>
+	</div>
+	<div class="suscription">
+		<div class="suscriptionBox">
+			<section class="upboxSus">
+				<h3 class="bigPhrase2" id="susBoxH">Designs tips, tricks, and freebles. Delivered weekly.</h3>
+				<p class="textmc" id="susBoxT">Alice was beginning to get very tired of sitting by her sister on the bank, and of having.</p>
+			</section>
+			<section class="bottomboxSus">
+				<form class="formsus">
+					<input type="email" id="email" class="emailbox" placeholder="Email Address...">
+					<input type="submit" class="sendButton" value="SUBSCRIBE">
+				</form>
+			</section>
+		</div>
+	</div>
+	<div class="sectioncomm" id="gitbox">
+		<h1 class="bigPhrase2" id="gitphrase">get in touch</h1>
+		<p class="textmc" id="gittext">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing do: once or twice she had peeped into the book. Alice was beginning to get very tired of sitting by her sister on the bank.</p>
+		<hr class="redline" id="redlineleft">
+	</div>
+	<div class="feedingBackBox">
+		<section class="fBLS">
+			<form class="formFB">
+				<input type="text" id="inputName" class="itemformFB" placeholder="Name">
+				<input type="text" id="inputEmail" class="itemformFB" placeholder="Your Email">
+				<input type="text" id="inputMsg" class="itemformFB" placeholder="Type your message">
+				<input type="submit" id="sendmessage" class="sendButton" value="SEND MESSAGE">
+			</form>
+		</section>
+		<section class="fBRS">
+			<h4 class="contactInfo">Contact info</h4>
+			<p class="dataContact">Olmos 703, Primero de Mayo, Coatzacoalcos, Veracruz, Mexico</p>
+			<p class="dataContact">xosi.000901@gmail.com</p>
+			<p class="dataContact" id="numberphone">(+52)9202732016</p>
+		</section>
+	</div>
+	<footer class="end">
+		<div class="rigths">
+			© Copyrigth @please dont steal it. All rights reserved.
+		</div>
+		<div class="socialNW">
+			<img class="logoSNW" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png">
+			<img class="logoSNW" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png">
+			<img class="logoSNW" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png">
+			<img class="logoSNW" src="http://assets.stickpng.com/thumbs/5cb78671a7c7755bf004c14b.png">
+
+		</div>
+	</footer>
+</body>
+</html>
