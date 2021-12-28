@@ -192,11 +192,10 @@
 			height: 100%;
 			display: none;
 			flex-wrap: wrap;
-
 		}
 
 		.whiteBox_carruselBox img {
-			height: 90%;
+			width: 600px;
 			margin: auto;
 
 		}
@@ -289,7 +288,9 @@
 					height: 100%;
 					margin: auto;
 					margin-left: 0;
-					display: block;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
 					padding-left: 7%;
 					
 				}
@@ -300,8 +301,6 @@
 							max-height: 120px;
 							max-width: 120px;
 							filter: contrast(35%) sepia(50%) hue-rotate(140deg) saturate(2000%);
-							position: relative;
-							left: 30%;
 							margin-top: 5%;
 							margin-bottom: 10%;
 							display: none;
@@ -344,7 +343,9 @@
 
 		.blueBox_leftBox_inverse {
 			margin-right: auto;
-			margin-left: 0;
+			margin-left: 0px;
+			padding-right: 0;
+			padding-left: 7%;
 		}
 
 					.boldTitle_blue {
@@ -375,12 +376,13 @@
 		}
 
 		.blueBox_rightBox>img, .blueBox_rightBox_inverse>img{
-			height: 80%;
+			width: 250px;
 		}
 
 		.blueBox_rightBox_inverse {
 			margin-left: auto;
 			margin-right: 0;
+			justify-content: flex-end;
 			
 		}
 
